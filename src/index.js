@@ -91,7 +91,9 @@ function onloadMore() {
          captionDelay: 250,
        });
  
-       const totalPages = Math.ceil(response.data.total / 40);
+       const totalPages = Math.ceil(response.totalHits / 40);
+
+       
  
        const lastEL = document.querySelector('.gallery').lastChild;
        if (lastEL) {
@@ -118,5 +120,5 @@ function onloadMore() {
 
 
 
-f
+
  
