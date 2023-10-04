@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #cef0e7;
+}
+
+
+p
+ {
+    margin: 0;
+}
+
+.gallery-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+  }
+    @media screen and (min-width: 480px) {
+    .gallery-container{ 
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+      
+    }
+  
+    @media screen and (min-width: 768px) {
+        .gallery-container{ 
+            width: 768px;
+        }
+          
+        }
+
+        @media screen and (min-width: 1440px) {
+            .gallery-container{ 
+                width: 1440px;
+            }
+              
+            }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0 auto;
+    margin-right:  0 auto;
+    max-width: 1440px;
+   
+  }
+ 
+ .gallery__link {
+    margin-top: 20px;
+    margin-left: 20px;
+    min-width: 320px;
+    flex-basis: calc((100% - 80px) / 4);
+    border: 2px solid rgb(241, 238, 238);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+    text-decoration: none;
+    
+  }
+  .gallery-img {
+    display: block;
+    height: 250px;
+
+  }
+
+
+  .gallery-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+  }
+
+
+
+.info{
+    color: black;
+    font-size: 14px;
+    display: flex;
+  background-color: black;
+   padding: 5 10 5 10;
+    background-color: #5de2bf;
+    border-radius:  0 0 10px 10px ;
+  
+    
+}
+.info-item{
+   padding-left: 10px;
+   
+}
+
+
+  .gallery__link:hover {
+    cursor: zoom-in;
+  }
+  
+
+
+  .search-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-form input {
+    width: 30%;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    padding: 12px 20px;
+    font: inherit;
+  }
+  
+  .search-form button {
+  
+    width: 80px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .search-form button:hover,
+  .search-form button:focus {
+    background-color: #5de2bf;
+    transition: all 1s;
+   
+  }
+ 
+
+
+  #arrowTop {
+    font-size: 2.5em;        
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#arrowTop::before {
+    content: '⏏'; 
+    color: #5de2bf; 
+       
+}
